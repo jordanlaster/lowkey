@@ -1,0 +1,80 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<div class="site-header-content outer{{#match @custom.header_style "Left aligned"}} left-aligned{{/match}}{{#unless @custom.show_publication_cover}}{{#match @custom.header_style "Hidden"}} no-content{{/match}}{{/unless}}">
+
+    {{#if @custom.show_publication_cover}}
+        {{#if @site.cover_image}}
+            {{!-- This is a responsive image, it loads different sizes depending on device
+            https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+            <img class="site-header-cover"
+                srcset="{{img_url @site.cover_image size="s"}} 300w,
+                        {{img_url @site.cover_image size="m"}} 600w,
+                        {{img_url @site.cover_image size="l"}} 1000w,
+                        {{img_url @site.cover_image size="xl"}} 2000w"
+                sizes="100vw"
+                src="{{img_url @site.cover_image size="xl"}}"
+                alt="{{@site.title}}"
+            />
+        {{/if}}
+    {{/if}}
+
+    {{#match @custom.header_style "!=" "Hidden"}}
+        <div class="site-header-inner inner">
+            {{#match @custom.navigation_layout "Logo on cover"}}
+                {{#if @site.logo}}
+                    <img class="site-logo" src="{{@site.logo}}" alt="{{@site.title}}">
+                {{else}}
+                    <h1 class="site-title">{{@site.title}}</h1>
+                {{/if}}
+            {{/match}}
+            {{#if @site.description}}
+                <p class="site-description">{{@site.description}}</p>
+            {{/if}}
+        </div>
+    {{/match}}
+
+</div>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    <section class="featured">
+        <div class="inner posts">
+            <div class="posts-intro">
+                <h2>Featured</h2>
+                <p>Below you'll find my best posts</p>
+            </div>
+            <div class="post-feed">
+                {{#get "posts" filter="featured:true" limit="6" as |featured|}}
+                {{#if featured}}
+                    {{! Loop through our featured posts }}
+                    {{#foreach featured}}
+                        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                        {{> "post-card"}}
+                    {{/foreach}}
+                {{/if}}
+                {{/get}}
+            </div>
+        </div>
+    </section>
+
+
+    <section class="latest-posts">
+        <div class="inner posts">
+            <div class="posts-intro">
+                <h2>Latest</h2>
+                <p>Below you'll find my latest posts</p>
+                <a class="gh-head-button intro-button" href="#/portal/signup">See all of my posts</a>
+            </div>
+            <div class="post-feed">
+                {{#get "posts" filter="featured:false" include="tags" limit="6" as |post|}}
+                {{! Loop through our latest posts }}
+                {{#foreach post}}
+                    {{> "post-card"}}
+                {{/foreach}}
+                {{/get}}
+            </div>
+        </div>
+    </section>
+</main>
