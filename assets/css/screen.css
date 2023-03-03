@@ -1576,6 +1576,9 @@ except for when immediately preceeded by a heading */
 .has-serif-title .kg-header-card h2.kg-header-card-header {
     font-family: var(--font-serif);
 }
+.kg-header-card.kg-size-small {
+    margin: auto;
+}
 
 
 /* Captions */
