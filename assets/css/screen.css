@@ -87,7 +87,7 @@ production stylesheet in assets/built/screen.css
     width: 100%;
 }
 
-.newsletter-intro {
+.letter-intro {
     display: grid;
     justify-content: center;
     padding-bottom: 20px;
@@ -95,16 +95,16 @@ production stylesheet in assets/built/screen.css
     padding-right: 20px;
     text-align: left;
 }
-.newsletter-title {
+.letter-title {
     color: white;
 }
-.newsletter-description {
+.letter-description {
     max-width: 956px;
 }
-.newsletter-subscribe {
+.letter-subscribe {
     margin-top: 20px;
 }
-.newsletter-signup {
+.letter-signup {
     color: white;
     text-decoration-line: underline;
     text-decoration-style: solid;
