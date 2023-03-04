@@ -3,12 +3,13 @@
 into the {body} of the default.hbs template --}}
 
 <div>
-    <div class="page-intro">
+    <div class="newsletter-intro">
         <h2 class="newsletter-title">Lasta's Letter</h2>
-        <p>
-            From Bitcoin to burpees: Lasta's Letter provides insights on bitcoin, nutrition, fitness, and everything in between.</p>
-        <p>Jordan uses his research and experience to lift the veil on these opaque topics.</p>
-        <p>Let's get to it. Subscribe here.</p>
+        <p class="newsletter-description">
+            From Bitcoin to burpees, Lasta's Letter is a weekly newsletter that provides insights on a wide range of topics, including bitcoin, nutrition, fitness, and everything in between.
+            Jordan uses his research and experiences to lift the veil on these sometimes confusing subjects.
+        </p>
+        <p class="newsletter-subscribe">Letter now than later! <a class="newsletter-signup"href="#/portal/signup">Subscribe here.</a></p>
     </div>
     {{!-- The main content area --}}
     <main id="site-main" class="site-main outer">
@@ -24,7 +25,7 @@ into the {body} of the default.hbs template --}}
     <div class="inner posts">
 
         <div class="post-feed">
-            {{#get "posts" limit="all" as |post|}}
+            {{#get "posts" include="tags" limit="all" as |post|}}
                 {{! Loop through our featured posts }}
                 {{#foreach post}}
                         {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
