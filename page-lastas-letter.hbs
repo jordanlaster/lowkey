@@ -14,10 +14,9 @@ into the {body} of the default.hbs template --}}
     {{!-- The main content area --}}
     <main id="site-main" class="site-main outer">
     {{!-- <div class="collections">
-        {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
-            {{! Loop through our featured posts }}
+        {{#get "tags" limit="all"  include="count.posts" order="count.posts desc"}}
             {{#foreach tags}}
-                <p>{{name}} ({{count.posts}})</p>
+                {{> "card-tag"}}
             {{/foreach}}
         {{/get}}
     </div> --}}
