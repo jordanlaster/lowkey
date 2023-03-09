@@ -2051,20 +2051,43 @@ iframe.instagram-media + script + :not([id]) {
 /* ---------------------------------------------------------- */
 
 .site-footer {
-    position: relative;
-    margin: max(12vmin, 64px) 0 0 0;
-    padding-top: 48px;
-    padding-bottom: 140px;
+    background: #0a0b0c;
     color: #fff;
-    background: color-mod(var(--color-darkgrey) l(-5%));
+    margin-top: 120px;
+    padding-bottom: 120px;
+    padding-top: 80px;
+    position: relative;
 }
 
 .site-footer .inner {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: auto 1fr auto;
-    color: rgba(255,255,255,0.7);
-    font-size: 1.3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    color: white;
+    gap: 40px;
+}
+
+.subscribe {
+    margin-bottom: 80px;
+}
+
+.subscribe-title {
+    color: white;
+    font-size: 4.4rem;
+}
+
+.subscribe-description {
+    font-size: 2rem;
+    margin-top: 16px;
+}
+
+.subscribe-button {
+    margin-top: 40px;
+}
+
+.subscribe-button:hover {
+    background-color: gray;
 }
 
 .site-footer .copyright a {
@@ -2074,12 +2097,7 @@ iframe.instagram-media + script + :not([id]) {
 }
 
 .site-footer a {
-    color: rgba(255,255,255,0.7);
-}
-
-.site-footer a:hover {
-    color: rgba(255,255,255,1);
-    text-decoration: none;
+    color: rgba(255,255,255,0.5);
 }
 
 .site-footer-nav ul {
@@ -2104,6 +2122,12 @@ iframe.instagram-media + script + :not([id]) {
     display: inline-flex;
     align-items: center;
     margin-left: 10px;
+    color: white;
+}
+
+.site-footer-nav a:hover {
+    color: gray;
+    text-decoration: none;
 }
 
 .site-footer-nav li:not(:first-child) a:before {

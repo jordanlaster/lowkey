@@ -72,11 +72,19 @@
     {{!-- The global footer at the very bottom of the screen --}}
     <footer class="site-footer outer">
         <div class="inner">
-            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <section class="subscribe">
+                <h3 class="subscribe-title">
+                    Subscribe to Lasta's Letter
+                <h3>
+                <div class="subscribe-description">
+                    Subscribe to my bi-weekly newsletter, Lasta's Letter, and get free insights on bitcoin sent to your inbox. 
+                </div>
+                <a class="subscribe-button gh-head-button gh-portal-close" href="#/portal/signup" data-portal="signup">Subscribe Now</a>
+            </section>
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
         </div>
     </footer>
 
