@@ -18,7 +18,7 @@ into the {body} of the default.hbs template --}}
     <div class="inner posts">
 
         <div class="post-feed">
-            {{#get "posts" include="tags" filter="primary_tag:{{primary_tag.slug}}" limit="all" as |post|}}
+            {{#get "posts" include="tags" filter="primary_tag:lastas-letter" limit="all" as |post|}}
                 {{! Loop through our featured posts }}
                 {{#foreach post}}
                         {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
