@@ -42,8 +42,7 @@ into the {body} of the default.hbs template --}}
     <section class="featured">
         <div class="inner posts">
             <div class="posts-intro">
-                <h2>Featured</h2>
-                <p>Below you'll find my best posts</p>
+                <h2>Featured Articles</h2>
             </div>
             <div class="post-feed">
                 {{#get "posts" filter="featured:true" limit="6" as |featured|}}
@@ -59,22 +58,8 @@ into the {body} of the default.hbs template --}}
         </div>
     </section>
 
+    {{!-- Add Buttons to go to different sections like https://ashleyjanssen.com/
+    <section class="">
 
-    <section class="latest-posts">
-        <div class="inner posts">
-            <div class="posts-intro">
-                <h2>Latest</h2>
-                <p>Below you'll find my latest posts</p>
-                <a class="gh-head-button intro-button" href="/lastas-letter/">See all of my posts</a>
-            </div>
-            <div class="post-feed">
-                {{#get "posts" filter="featured:false" include="tags" limit="6" as |post|}}
-                {{! Loop through our latest posts }}
-                {{#foreach post}}
-                    {{> "post-card"}}
-                {{/foreach}}
-                {{/get}}
-            </div>
-        </div>
-    </section>
+    </section> --}}
 </main>
