@@ -2130,22 +2130,18 @@ iframe.instagram-media + script + :not([id]) {
     text-decoration: none;
 }
 
-.site-footer-nav li:not(:first-child) a:before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 2px;
-    margin: 0 10px 0 0;
-    background: #fff;
-    border-radius: 100%;
-}
-
 @media (max-width: 767px) {
     .site-footer .inner {
         max-width: 500px;
         grid-template-columns: 1fr;
         grid-gap: 0;
         text-align: center;
+    }
+    .site-footer-nav .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
     }
     .site-footer .copyright,
     .site-footer .copyright a {
