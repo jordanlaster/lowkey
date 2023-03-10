@@ -4,6 +4,11 @@ I downloaded [Ghost's]((http://github.com/tryghost/ghost/)) default theme [Caspe
 
 I call the custom theme Lowkey – a simple ghost theme with an emphasis on solo creators.
 
+# Recommendations
+
+I highly recommend going through [Christopher Dodd's skillshare course](https://www.skillshare.com/en/classes/Ghost-Theme-Development-How-to-Customise-Your-Ghost-Publication/1570520217/) before customizing a Ghost theme for the first time. It's less than 3 hours and simplified the process greatly. Use my [Skillshare referral link](https://skl.sh/3yoDpE2) to get 1 month free.
+
+
 &nbsp;
 
 ![screenshot-desktop](./assets/desktop-screenshot.png)
