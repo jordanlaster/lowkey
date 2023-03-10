@@ -1,10 +1,12 @@
-# Casper
+# Lowkey
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+I downloaded [Ghost's]((http://github.com/tryghost/ghost/)) default theme [Casper](https://github.com/TryGhost/Casper/), used what I learned from [Christopher Dodd's skillshare course](https://www.skillshare.com/en/classes/Ghost-Theme-Development-How-to-Customise-Your-Ghost-Publication/1570520217/) to edit it, and published it at https://www.buddylasta.com. It's now my main website for all of my content!
+
+I call the custom theme Lowkey – a simple ghost theme with an emphasis on solo creators.
 
 &nbsp;
 
-![screenshot-desktop](https://user-images.githubusercontent.com/1418797/183329195-8e8f2ee5-a473-4694-a813-a2575491209e.png)
+![screenshot-desktop](./assets/desktop-screenshot.png)
 
 &nbsp;
 
@@ -25,14 +27,17 @@ This theme has lots of code comments to help explain what's going on just by rea
 
 One neat trick is that you can also create custom one-off templates by adding the slug of a page to a template file. For example:
 
+- `home.hbs` - Custom template to generate a list of posts for the home page. Replaces index.hbs content
 - `page-about.hbs` - Custom template for an `/about/` page
+- `page-lastas-letter.hbs` - Custom template for [newsletter #1](https://www.buddylasta.com/lastas-letter) page
+- `page-off-chain.hbs` - Custom template for [newsletter #2](https://www.buddylasta.com/off-chain) page
 - `tag-news.hbs` - Custom template for `/tag/news/` archive
 - `author-ali.hbs` - Custom template for `/author/ali/` archive
 
 
 # Development
 
-Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Lowkey styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # install dependencies
@@ -65,5 +70,5 @@ You can add your own SVG icons in the same manner.
 
 
 # Copyright & License
-
-Copyright (c) 2013-2022 Ghost Foundation - Released under the [MIT license](LICENSE).
+- Feel free to use Lowkey as you please!
+- Copyright (c) 2013-2022 Ghost Foundation - Released under the [MIT license](LICENSE).
