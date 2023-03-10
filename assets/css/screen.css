@@ -2107,6 +2107,10 @@ iframe.instagram-media + script + :not([id]) {
     margin: 0 0 20px;
     padding: 0;
     list-style: none;
+    font-size: 1.6rem;
+    letter-spacing: -.006em;
+    gap: 12px;
+    font-weight: 500;
 }
 
 .site-footer-nav li {
