@@ -1589,6 +1589,10 @@ except for when immediately preceeded by a heading */
     font-family: var(--font-sans);
 }
 
+.kg-header-card {
+    margin: auto;
+}
+
 .kg-card.kg-header-card.kg-style-dark {
     background: var(--color-darkgrey);
 }
