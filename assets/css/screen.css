@@ -2525,8 +2525,23 @@ html.dark-mode .footer-cta-title {
     }
 }
 
-/*
+/* 13. Miscellaneous
+/* ---------------------------------------------------------- */
 
+.page-button-position {
+    display: flex;
+    justify-content: center;
+}
+
+.page-button {
+    margin-top: 3.2rem;
+}
+
+.page-button:hover {
+    background-color: gray;
+}
+
+/*
 Hey! You reached the end.
 
 Hope you enjoyed this CSS file, if you have any suggestions
