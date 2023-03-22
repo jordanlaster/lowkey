@@ -77,3 +77,6 @@ You can add your own SVG icons in the same manner.
 # Copyright & License
 - Feel free to use Lowkey as you please!
 - Copyright (c) 2013-2022 Ghost Foundation - Released under the [MIT license](LICENSE).
+
+# To Do
+- Make key areas of this theme customizable
