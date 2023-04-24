@@ -4,14 +4,10 @@ into the {body} of the default.hbs template --}}
 
 <div>
     <div class="letter-intro">
-        <h2 class="letter-title">Off Chain</h2>
+        <h2 class="letter-title">Blog</h2>
         <p class="letter-description">
-            Off Chain covers a diverse range of topics outside of Bitcoin and Lasta's Letter.
-            Most notably self-improvement, nutrition, fitness, and other relevant areas. By sharing 
-            my own experiences, you can gain practical tips and valuable insights to help you achieve 
-            your goals.
+            Thoughts and experiences outside of Bitcoin.
         </p>
-        <p class="letter-subscribe">It's off the chain! <a class="letter-signup"href="#/portal/signup">Subscribe here.</a></p>
     </div>
 
     {{!-- The main content area --}}
@@ -19,7 +15,7 @@ into the {body} of the default.hbs template --}}
     <div class="inner posts">
 
         <div class="post-feed">
-            {{#get "posts" include="tags" filter="primary_tag:off-chain" limit="9" as |post|}}
+            {{#get "posts" include="tags" filter="primary_tag:blog" limit="9" as |post|}}
                 {{! Loop through our featured posts }}
                 {{#foreach post}}
                         {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
@@ -28,7 +24,7 @@ into the {body} of the default.hbs template --}}
             {{/get}}
         </div>
         <div class="page-button-position">
-            <a class="page-button gh-head-button gh-portal-close" href="https://www.jordanlaster.com/tag/off-chain">View All Posts</a>
+            <a class="page-button gh-head-button gh-portal-close" href="https://www.jordanlaster.com/tag/blog">View All Posts</a>
         </div>
     </div>
     </main>
